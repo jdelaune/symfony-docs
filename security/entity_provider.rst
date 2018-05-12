@@ -124,7 +124,7 @@ with the following fields: ``id``, ``username``, ``password``,
         /** @see \Serializable::unserialize() */
         public function unserialize($serialized)
         {
-            list (
+            return list (
                 $this->id,
                 $this->username,
                 $this->password,
